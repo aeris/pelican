@@ -37,12 +37,12 @@ h6 {font-size: 1em}		/* 14px */
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	line-height: 1.1;
-	margin-bottom: .8em;
-    font-family: 'Yanone Kaffeesatz', arial, serif;
+	/*margin-bottom: .8em;*/
+	font-family: 'Yanone Kaffeesatz', arial, serif;
 }
 
 h3, h4, h5, h6 { margin-top: .8em; }
-	
+
 hr { border: 2px solid #EEEEEE; }
 
 /* Anchors */
@@ -63,7 +63,7 @@ a:hover, a:active {
 h1 a:hover {
     background-color: inherit
 }
-	
+
 /* Paragraphs */
 p {margin-bottom: 1.143em;}
 
@@ -117,7 +117,7 @@ div.note {
 
 /* Tables */
 table {margin: .5em auto 1.5em auto; width: 98%;}
-	
+
 	/* Thead */
 	thead th {padding: .5em .4em; text-align: left;}
 	thead td {}
@@ -125,14 +125,14 @@ table {margin: .5em auto 1.5em auto; width: 98%;}
 	/* Tbody */
 	tbody td {padding: .5em .4em;}
 	tbody th {}
-	
+
 	tbody .alt td {}
 	tbody .alt th {}
-	
+
 	/* Tfoot */
 	tfoot th {}
 	tfoot td {}
-	
+
 /* HTML5 tags */
 header, section, footer,
 aside, nav, article, figure {
@@ -166,9 +166,9 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		color: #C74350;
 		text-shadow: none;
 	}
-	
+
 	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
-	
+
 	/* Main Nav */
 	#banner nav {
 		background: #000305;
@@ -179,15 +179,15 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		padding: 0;
 		text-align: center;
 		width: 800px;
-		
+
 		border-radius: 5px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 	}
-	
+
 	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
 	#banner nav li {float: left; display: inline; margin: 0;}
-	
+
 	#banner nav a:link, #banner nav a:visited {
 		color: #fff;
 		display: inline-block;
@@ -201,12 +201,12 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		color: #fff;
 		text-shadow: none !important;
 	}
-	
+
 	#banner nav li:first-child a {
 		border-top-left-radius: 5px;
 		-moz-border-radius-topleft: 5px;
 		-webkit-border-top-left-radius: 5px;
-		
+
 		border-bottom-left-radius: 5px;
 		-moz-border-radius-bottomleft: 5px;
 		-webkit-border-bottom-left-radius: 5px;
@@ -221,7 +221,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	overflow: hidden;
 	padding: 20px;
 	width: 760px;
-	
+
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -235,12 +235,6 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 #featured figure img {display: block; float: right;}
 
-#featured h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
-#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
-
-#featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
-#featured h3 a:hover, #featured h3 a:active {color: #fff;}
-
 /*
 	Body
 *****************/
@@ -250,7 +244,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	overflow: hidden;
 	padding: 20px 20px;
 	width: 760px;
-	
+
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -285,34 +279,44 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		float: left;
 		width: 615px;
 	}
-	
+
 	#extras .blogroll li {float: left; margin: 0 20px 0 0; width: 185px;}
-	
+
 	/* Social */
 	#extras .social {
 		float: right;
 		width: 175px;
 	}
-	
+
 	#extras div[class='social'] a {
 		background-repeat: no-repeat;
 		background-position: 3px 6px;
 		padding-left: 25px;
 	}
-	
+
 		/* Icons */
+		.social a[type$='atom+xml'], .social a[type$='rss+xml'] {background-image: url('../images/icons/rss.png');}
+
+		.social a[href*='identi.ca'] {background-image: url('../images/icons/statusnet.png');}
+		.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
+		.social a[href*='plus.google.com'] {background-image: url('../images/icons/google-plus.png');}
+
+		.social a[href*='github.com'],
+		.social a[href*='git.io'] {background-image: url('../images/icons/github.png');}
+		.social a[href*='bitbucket.org'] {background-image: url('../images/icons/bitbucket.png');}
+		.social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.png');}
+
 		.social a[href*='delicious.com'] {background-image: url('../images/icons/delicious.png');}
 		.social a[href*='digg.com'] {background-image: url('../images/icons/digg.png');}
 		.social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.png');}
 		.social a[href*='last.fm'], .social a[href*='lastfm.'] {background-image: url('../images/icons/lastfm.png');}
-		.social a[type$='atom+xml'], .social a[type$='rss+xml'] {background-image: url('../images/icons/rss.png');}
-		.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
 		.social a[href*='linkedin.com'] {background-image: url('../images/icons/linkedin.png');}
-		.social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.png');}
-		.social a[href*='github.com'],
-		.social a[href*='git.io'] {background-image: url('../images/icons/github.png');}
 		.social a[href*='gittip.com'] {background-image: url('../images/icons/gittip.png');}
-		.social a[href*='plus.google.com'] {background-image: url('../images/icons/google-plus.png');}
+
+		/*.blogroll a[href*='april.org'] {background-image: url('../images/icons/april.png');}*/
+		.blogroll a[href*='lqdn.fr'],
+		.blogroll a[href*='laquadrature.net'] y{background-image: url('../images/icons/lqdn.png');}
+		/*.blogroll a[href*='fdnt.fr'] {background-image: url('../images/icons/fdn.png');}*/
 
 /*
 	About
@@ -325,7 +329,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	padding: 20px;
 	text-align: left;
 	width: 760px;
-	
+
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -369,7 +373,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	/* Blog Index */
 	#posts-list {list-style: none; margin: 0;}
 	#posts-list .hentry {padding-left: 10px; position: relative;}
-	
+
 	#posts-list footer {
 		left: 10px;
 		position: relative;
@@ -377,7 +381,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		top: 0.5em;
 		width: 190px;
 	}
-	
+
 	/* About the Author */
 	#about-author {
 		background: #f9f9f9;
@@ -385,21 +389,21 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		font-style: normal;
 		margin: 2em 0;
 		padding: 10px 20px 15px 20px;
-		
+
 		border-radius: 5px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 	}
-	
+
 	#about-author strong {
 		color: #C64350;
 		clear: both;
 		display: block;
 		font-size: 1.429em;
 	}
-	
+
 	#about-author .photo {border: 1px solid #ddd; float: left; margin: 5px 1em 0 0;}
-	
+
 	/* Comments */
 	#comments-list {list-style: none; margin: 0 1em;}
 	#comments-list blockquote {
@@ -408,24 +412,31 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		font-style: normal;
 		margin: 0;
 		padding: 15px 20px;
-		
+
 		border-radius: 5px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 	}
 	#comments-list footer {color: #888; padding: .5em 1em 0 0; text-align: right;}
-	
+
 	#comments-list li:nth-child(2n) blockquote {background: #F5f5f5;}
-	
+
 	/* Add a Comment */
 	#add-comment label {clear: left; float: left; text-align: left; width: 150px;}
 	#add-comment input[type='text'],
 	#add-comment input[type='email'],
 	#add-comment input[type='url'] {float: left; width: 200px;}
-	
+
 	#add-comment textarea {float: left; height: 150px; width: 495px;}
-	
+
 	#add-comment p.req {clear: both; margin: 0 .5em 1em 0; text-align: right;}
-	
+
 	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 	#add-comment * {margin-bottom: .5em;}
+
+	#content, #featured { box-shadow: 0px 0px 8px rgba(0,0,0,0.5); }
+	article h1 { color: #C74451; margin-bottom: 0.25em; }
+	article h2 { color: #4451C7; margin-bottom: 0.25em; padding-left: 1em; }
+	article h3 { color: #51C744; margin-bottom: 0.25em; padding-left: 2em; }
+
+	.entry-content p, article p { text-align:justify; }

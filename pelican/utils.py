@@ -68,7 +68,7 @@ def get_date(string):
 
 def pelican_open(filename):
     """Open a file and return it's content"""
-    return open(filename, encoding='utf-8').read()
+    return open(filename, encoding='utf-8').read().replace(u"\u00A0", "&nbsp;")
 
 
 def slugify(value):

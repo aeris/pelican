@@ -164,8 +164,7 @@ class Page(object):
                     )
 
                 if value in self._context['filenames']:
-                    origin = '/'.join((siteurl,
-                             self._context['filenames'][value].url))
+                    origin = self._context['filenames'][value].url
                 else:
                     logger.warning(u"Unable to find {fn}, skipping url"
                                     " replacement".format(fn=value))

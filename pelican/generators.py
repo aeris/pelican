@@ -365,6 +365,8 @@ class ArticlesGenerator(Generator):
                 all_articles.append(article)
             elif article.status == "draft":
                 self.drafts.append(article)
+            elif article.status == "skip":
+                pass
             else:
                 logger.warning(u"Unknown status %s for file %s, skipping it." %
                                (repr(unicode.encode(article.status, 'utf-8')),

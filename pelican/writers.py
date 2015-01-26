@@ -123,10 +123,10 @@ class Writer(object):
             logger.info(u'writing %s' % filename)
 
         localcontext = context.copy()
-        if relative_urls:
-            relative_path = get_relative_path(name)
-            context['localsiteurl'] = relative_path
-            localcontext['SITEURL'] = relative_path
+        #if relative_urls:
+        #    relative_path = get_relative_path(name)
+        #    context['localsiteurl'] = relative_path
+        #    localcontext['SITEURL'] = relative_path
 
         localcontext.update(kwargs)
 
